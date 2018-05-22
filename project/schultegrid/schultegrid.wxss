@@ -1,0 +1,138 @@
+.game{
+  display:flex;
+  align-items: center;
+  flex-direction:column;
+}
+
+.title
+{
+  display: none;
+  align-items: center;
+  flex-direction:row;
+
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.title-text
+{
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #000000;
+  border-radius:5px;
+  background-color: #FFFFFF;
+  color: #000000;
+
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+
+  width: 300rpx;
+  height: 80rpx;
+}
+
+.table{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction:column;
+
+  width: 600rpx;
+  height: 600rpx;
+
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+
+  border: 1px solid #000000;
+}
+
+.row{
+  display:flex;
+  flex-direction:row;
+}
+
+.light-grid{
+  background-color: #EFEFEF;
+}
+
+.dark-grid{
+  background-color: #CFCFCF;
+}
+
+.text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-family: La Bamba LET Plain;
+}
+
+.button
+{
+  display: flex;
+  flex-direction:row;
+
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.main-button
+{
+  flex: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius:5px;
+  background-color: green;
+  color: #FFFFFF;
+
+  margin-left: 1rpx;
+  margin-right: 1rpx;
+
+  width: 600rpx;
+  height: 80rpx;
+}
+
+.level
+{
+  display: flex;
+  flex-direction:row;
+
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.back-label
+{
+  align-items: center;
+  justify-content: left;
+  font-size:15px;
+
+  border-radius:5px;
+  background-color: #FFFFFF;
+  color: #000000;
+
+  margin-left: 1rpx;
+  margin-right: 1rpx;
+}
+
+.back-button
+{
+  align-items: center;
+  justify-content: center;
+
+  border-radius:5px;
+  background-color: #AFAFAF;
+  color: #FFFFFF;
+
+  margin-left: 1rpx;
+  margin-right: 1rpx;
+
+  width: 150rpx;
+  height: 80rpx;
+}

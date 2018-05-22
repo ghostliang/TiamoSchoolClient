@@ -1,0 +1,45 @@
+<view class="game">
+
+  <view class="table">
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="rowNum" wx:key="*this">
+      <view wx:if="{{rowNum <= blockNum}}" class="row">
+        <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="colNum" wx:key="*this">
+          <view wx:if="{{colNum <= blockNum}}" class="{{((rowNum%2)^(colNum%2)) ? 'light-grid' : 'dark-grid'}}">
+            <view class="text" style="width:{{gridwidth}}rpx;height:{{gridheight}}rpx;font-size:{{fontsize}}rpx;scale:{{gridscale}}" bindtap='onClick' id="{{(rowNum-1)*blockNum+colNum-1}}" animation="{{(currentIndex==((rowNum-1)*blockNum+colNum-1)||isInit)?gridanimation:''}}">
+              {{gridsNum[(rowNum-1)*blockNum+colNum-1]}}
+            </view>
+          </view>
+        </view>
+      </view>
+      <view wx:else class="row">
+        <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="colNum" wx:key="*this">
+          <view wx:if="{{colNum > blockNum}}">
+            <view class="grid text" display="none">
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="button">
+    <view class="back-label"  style="display:{{showScore?'flex':'none'}}; width:225rpx">分数:{{score}}</view>
+    <view class="back-label"  style="display:{{showTimer?'flex':'none'}}; width:225rpx">时间:{{time}}</view>
+    <view class="back-label"  style="display:{{showCombo?'flex':'none'}}; width:150rpx">连击:{{combo}}</view>
+  </view>
+
+  <view class="button">
+    <view class="back-button" style="display:{{showLevel?'flex':'none'}}; width:125rpx" bindtap='onDecLevel' >-</view>
+    <view class="back-button" style="display:{{showLevel?'flex':'none'}}; width:150rpx">难度:{{blockNum-2}}</view>
+    <view class="back-button" style="display:{{showLevel?'flex':'none'}}; width:125rpx" bindtap='onIncLevel'>+</view>
+    <view class="main-button" style="display:{{showStart?'flex':'none'}}; width:200rpx" bindtap='onStart'>开始</view>
+
+    <view class="main-button" style="display:{{showPause?'flex':'none'}}; width:600rpx" bindtap='onPause'>暂停</view>
+    <view class="main-button" style="display:{{showNext?'flex':'none'}};  width:600rpx" bindtap='onQuit'>再来一局</view>
+
+    <view class="back-button" style="display:{{showQuit?'flex':'none'}};  width:200rpx" bindtap='onQuit'>退出</view>
+    <view class="back-button" style="display:{{showRenew?'flex':'none'}}; width:200rpx" bindtap='onRenew'>重开</view>
+    <view class="main-button" style="display:{{showGoOn?'flex':'none'}};  width:200rpx" bindtap='onGoOn'>继续</view>
+  </view>
+</view>

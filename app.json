@@ -1,0 +1,14 @@
+{
+  "pages":[
+    "project/schultegrid/schultegrid",
+    "index/index",
+    
+    "project/9x9/9x9"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

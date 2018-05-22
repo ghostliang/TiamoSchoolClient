@@ -1,0 +1,28 @@
+.index {
+  background-color: F8F8F8;
+  display:flex;
+  flex-direction:column;
+  margin-left: 20%;
+  margin-right: 10%;
+} 
+
+.navigator {
+  display:flex;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.text{
+  display:flex;
+  align-items: center;
+  margin-left: 50px;
+  text-align-last:left;
+}
+
+.image {
+  width: 60rpx;
+  height: 60rpx;
+  border: 1px solid #000000;
+}

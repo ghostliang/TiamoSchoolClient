@@ -1,0 +1,8 @@
+<view class="index">
+  <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+    <navigator class="navigator" url="../project/{{item.id}}/{{item.id}}">
+      <image class="image" src="../../resources/{{item.id}}.png"></image>
+      <view class="text">{{item.name}}</view>
+    </navigator>
+  </block>
+</view>

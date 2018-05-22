@@ -1,0 +1,26 @@
+.table{
+  display:flex;
+  align-items: left;
+  margin-left: 10%;
+}
+
+.row{
+  display:flex;
+}
+
+.grid{
+  margin-top: 1rpx;
+  margin-bottom: 1rpx;
+  margin-left: 1rpx;
+  margin-right: 1rpx;
+  
+}
+
+.text{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #EFEFEF;
+  color: #000000;
+  font-family: La Bamba LET Plain;
+}

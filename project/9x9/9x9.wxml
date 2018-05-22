@@ -1,0 +1,11 @@
+<view class="table" style="flex-direction:column;">
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="rowNum" wx:key="*this" class="row" style="flex-direction:row;">
+      <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="colNum" wx:key="*this">
+        <view wx:if="{{rowNum <= colNum}}">
+          <view class="grid text" style="width:{{600/9}}rpx;height:{{600/9}}rpx;font-size:{{300/9}}rpx">
+            {{rowNum}}x{{colNum}}
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
